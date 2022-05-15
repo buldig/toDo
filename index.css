@@ -1,0 +1,65 @@
+@import url("reset.css");
+
+/* *:hover {
+    border:1px solid grey;
+} */
+
+.header__container {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(26, 26, 26);
+}
+
+.header__title {
+  color: #5e5d5d;
+  margin-left: 30px;
+}
+
+.main__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main__title {
+  margin-bottom: 10px;
+}
+
+.todo__input {
+  margin: 0 10%;
+  margin-bottom: 30px;
+}
+
+.todo__item {
+  display: flex;
+  width: 100%;
+  padding: 5px 20px;
+  border: 1px solid #1c1c1c;
+  align-items: center;
+}
+
+.todo__text {
+  margin-left: 30px;
+  flex: 1 1 auto;
+}
+
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+i {
+  pointer-events: none;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.yellow {
+  background-color: yellow;
+}

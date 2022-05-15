@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <p class="header__title">ToDo List</p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container">
+        <h1 class="main__title">ToDo List</h1>
+        <div class="main__todo">
+          <form class="todo__input" action="">
+            <input
+              class="todo__input_text"
+              type="text"
+              placeholder="New Task"
+            />
+            <button class="todo__input_button">Add</button>
+          </form>
+          <ul class="todo__list" id="list"></ul>
+        </div>
+      </div>
+    </main>
+    <script src="List.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
