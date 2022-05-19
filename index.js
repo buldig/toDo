@@ -18,6 +18,8 @@ function addTodo(event) {
 function removeElem() {
   let buttons = document.querySelectorAll(".btn");
   buttons.forEach((button) =>
-    button.addEventListener("click", () => main.removeTodo(button.parentNode))
+    button.addEventListener("click", () =>
+      main.removeTodo(button.parentNode.getAttribute("data-id"))
+    )
   );
 }

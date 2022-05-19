@@ -7,7 +7,7 @@ class TodoBinding {
   static createTodoItem({ id, title }) {
     const li = document.createElement("li");
     li.classList.add("todo__item");
-    li.setAttribute("id", id);
+    li.dataset.id = id;
     li.insertAdjacentHTML(
       "afterbegin",
       `<input class="checkbox" type="checkbox" />
@@ -36,11 +36,8 @@ class TodoBinding {
     this.update();
   }
 
-  removeTodo(todo) {
-    const index = this.todoList.findIndex((elem) => {
-      console.log(elem);
-      return elem.id === +todo.getAttribute("id");
-    });
+  removeTodo(id) {
+    const index = this.todoList.findIndex((elem) => elem.id === id);
 
     this.todoList.splice(index, 1);
     this.update();
